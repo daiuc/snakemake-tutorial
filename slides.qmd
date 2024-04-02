@@ -172,7 +172,7 @@ rule fastqc:
 
 ## How to write snakemake rules
 
-![](code/dag.png){width=60% fig-align="center"}
+![](assets/dag.png){width=60% fig-align="center"}
 
 Snakemake rely on wildcards to track the dependencies between rules. 
 
@@ -230,7 +230,7 @@ snakemake --profile slurm
 
 ## Recommended practices
 
-![](code/dag.png){width=60% fig-align="left"}
+![](assets/dag.png){width=60% fig-align="left"}
 
 - Use `-n` to dry-run your workflow
 - Use `--dag` or `--rulegraph` to visualize your workflow

@@ -545,7 +545,7 @@ Chao Dai
 <section id="how-to-write-snakemake-rules-1" class="slide level2">
 <h2>How to write snakemake rules</h2>
 
-<img data-src="code/dag.png" style="width:60.0%" class="r-stretch quarto-figure-center"><p>Snakemake rely on wildcards to track the dependencies between rules.</p>
+<img data-src="assets/dag.png" style="width:60.0%" class="r-stretch quarto-figure-center"><p>Snakemake rely on wildcards to track the dependencies between rules.</p>
 <p>Imagine you have many steps in your workflow. Snakemake will start from required output files of the last rule, working all the way to the first rule, figuring out what files to produce along the way, based on wildcards.</p>
 <p>The rules and output files essentially create a DAG.</p>
 </section>
@@ -595,7 +595,7 @@ Chao Dai
 <section id="recommended-practices" class="slide level2">
 <h2>Recommended practices</h2>
 
-<img data-src="code/dag.png" style="width:60.0%" class="r-stretch quarto-figure-left"><ul>
+<img data-src="assets/dag.png" style="width:60.0%" class="r-stretch quarto-figure-left"><ul>
 <li>Use <code>-n</code> to dry-run your workflow</li>
 <li>Use <code>--dag</code> or <code>--rulegraph</code> to visualize your workflow</li>
 <li>Use modularized snakemake files if your workflow is reasonably large</li>
