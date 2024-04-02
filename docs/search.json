@@ -1,0 +1,198 @@
+[
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "smk-tutorial",
+    "section": "",
+    "text": "slides\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nAug 27, 2022\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides.html#what-is-snakemake",
+    "href": "slides.html#what-is-snakemake",
+    "title": "Snakemake tutorial",
+    "section": "What is snakemake?",
+    "text": "What is snakemake?\nSnakemake is a workflow management system, aiming to reduce the complexity of creating workflows by providing a clean and readable Python-based DSL. It is widely used in bioinformatics and data analysis."
+  },
+  {
+    "objectID": "slides.html#why-use-snakemake",
+    "href": "slides.html#why-use-snakemake",
+    "title": "Snakemake tutorial",
+    "section": "Why use snakemake?",
+    "text": "Why use snakemake?\n\n\nReadability and automation\nSnakemake ensures that the results of your analysis are reproducible by tracking the dependencies between the input files and the output files.\n\nrule concat:\n    input:\n        \"file1.txt\",\n        \"file2.txt\"\n    output:\n        \"output.txt\"\n    shell:\n        \"cat {input} &gt; {output}\""
+  },
+  {
+    "objectID": "slides.html#how-to-install-snakemake",
+    "href": "slides.html#how-to-install-snakemake",
+    "title": "Snakemake tutorial",
+    "section": "How to install snakemake?",
+    "text": "How to install snakemake?\nBest way to install is via conda."
+  },
+  {
+    "objectID": "slides.html#how-to-write-a-snakemake-workflow",
+    "href": "slides.html#how-to-write-a-snakemake-workflow",
+    "title": "Snakemake tutorial",
+    "section": "How to write a snakemake workflow?",
+    "text": "How to write a snakemake workflow?\nA snakemake workflow consists of a Snakefile, which defines the rules for the workflow, and input and output files that are used by the rules. Each rule in the Snakefile specifies the input files, output files, and commands that are used to generate the output files from the input files.\nHere is an example of a simple Snakefile that defines a rule to concatenate two input files into a single output file:"
+  },
+  {
+    "objectID": "slides.html#how-to-run-a-snakemake-workflow",
+    "href": "slides.html#how-to-run-a-snakemake-workflow",
+    "title": "Snakemake tutorial",
+    "section": "How to run a snakemake workflow?",
+    "text": "How to run a snakemake workflow?\nTo run a snakemake workflow, you need to create a Snakefile that defines the rules for the workflow, and input and output files that are used by the rules. You can then run the snakemake command with the -s option to specify the Snakefile:\nsnakemake -s Snakefile\nThis will run the workflow defined in the Snakefile and generate the output files specified by the rules."
+  },
+  {
+    "objectID": "slides.html#demo",
+    "href": "slides.html#demo",
+    "title": "Snakemake tutorial",
+    "section": "Demo",
+    "text": "Demo\n\nrules: rule all, localrules, expand, resources, touch, protected, temp, wildcard_constraints, conda\nconfiguration: configfile: \"path/to/config.yaml\"\nmodularization: include: \"path/to/module.smk\", use rule abc as abc2 with:"
+  },
+  {
+    "objectID": "slides.html#a-basic-example",
+    "href": "slides.html#a-basic-example",
+    "title": "Snakemake tutorial",
+    "section": "A basic example",
+    "text": "A basic example"
+  },
+  {
+    "objectID": "slides.html#use-snakemake-profiles",
+    "href": "slides.html#use-snakemake-profiles",
+    "title": "Snakemake tutorial",
+    "section": "Use snakemake profiles",
+    "text": "Use snakemake profiles"
+  },
+  {
+    "objectID": "slides.html#snakemake-directives",
+    "href": "slides.html#snakemake-directives",
+    "title": "Snakemake tutorial",
+    "section": "Snakemake directives",
+    "text": "Snakemake directives\ninput / output\n\nexpand and input functions\n\nparams\nresources\nthreads\nshell / script / run"
+  },
+  {
+    "objectID": "slides.html#use-dag-visualization",
+    "href": "slides.html#use-dag-visualization",
+    "title": "Snakemake tutorial",
+    "section": "Use DAG visualization",
+    "text": "Use DAG visualization"
+  },
+  {
+    "objectID": "slides.html#modularize-your-workflow",
+    "href": "slides.html#modularize-your-workflow",
+    "title": "Snakemake tutorial",
+    "section": "modularize your workflow",
+    "text": "modularize your workflow"
+  },
+  {
+    "objectID": "slides.html#before-you-run",
+    "href": "slides.html#before-you-run",
+    "title": "Snakemake tutorial",
+    "section": "Before you run",
+    "text": "Before you run\n\nAlways use -n for dry run\nuse DAG visualization to check the workflow"
+  },
+  {
+    "objectID": "slides.html#why-use-snakemake-1",
+    "href": "slides.html#why-use-snakemake-1",
+    "title": "Snakemake tutorial",
+    "section": "Why use snakemake?",
+    "text": "Why use snakemake?\n\n\nIntegrate scripts and shell\nWorks with Python, R, Bash, jupyter notebook, etc.\n\nrule concat:\n    input:\n        \"file1.txt\",\n        \"file2.txt\"\n    output:\n        \"output.txt\"\n    script:\n        \"concat.py\""
+  },
+  {
+    "objectID": "slides.html#why-use-snakemake-2",
+    "href": "slides.html#why-use-snakemake-2",
+    "title": "Snakemake tutorial",
+    "section": "Why use snakemake?",
+    "text": "Why use snakemake?\n\n\nPortable, scalable, and reproducible\nDirectly works with conda and containers, and integrates with HPC.\n\nrule concat:\n    input:\n        \"file1.txt\",\n        \"file2.txt\"\n    output:\n        \"output.txt\"\n    conda: \"envs/concat.yaml\"\n    singularity: \"containers/concat.sif\"\n    script:\n        \"concat.py\""
+  },
+  {
+    "objectID": "slides.html#install-snakemake-on-midway",
+    "href": "slides.html#install-snakemake-on-midway",
+    "title": "Snakemake tutorial",
+    "section": "Install snakemake on midway",
+    "text": "Install snakemake on midway\n\n\nSuppose you already have conda installed on midway, you can create a new env called smk.\n\nmamba create -n smk -c bioconda -c conda-forge snakemake"
+  },
+  {
+    "objectID": "slides.html#other-software-dependencies",
+    "href": "slides.html#other-software-dependencies",
+    "title": "Snakemake tutorial",
+    "section": "Other software dependencies",
+    "text": "Other software dependencies\nThere are mainly 2 routes you can go to address your software dependencies:\n\nhave the software installed to the same env where snakemake is\nor if already available on midway, you can use module load\n\n\n\n\n\n\n\nNote\n\n\n\nYour environment ($PATH and etc.) are automatically inherited into subshells when you run snakemake. So for example if you preload samtools then it will be automatically available in snakemake rules.\nYou can also use conda or singularity directives to address dependencies per rule.\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nRun module load software before you run snakemake. I find it more reliable than running module load inside a snakemake rule.\nI generally have most software installed in the same conda env where snakemake is."
+  },
+  {
+    "objectID": "slides.html#how-to-write-snakemake-rules",
+    "href": "slides.html#how-to-write-snakemake-rules",
+    "title": "Snakemake tutorial",
+    "section": "How to write snakemake rules",
+    "text": "How to write snakemake rules\nConsider each rule as one step of your workflow, for instance, a rule to first align reads, and then another rule to filter and index the alignment file.\nEach rule has the following basic structure:\n\n\nrule fastqc:\n    input:\n        read1 = \"data/{sample}_r1.fastq.gz\",\n        read2 = \"data/{sample}_r2.fastq.gz\",\n    output:\n        html = \"results/{sample}_fastqc.html\",\n        zip = \"results/{sample}_fastqc.zip\",\n    params:\n        \"param1\",\n    threads: 1\n    resources: cpu = 1, mem_mb = 10000, time = 500\n    shell:\n        \"fastqc -o {output} {input.read1} {input.read2}\"\n\n\noutput: the files that will be generated by the rule\ninput: input files needed\nwildcards: {sample} is a wildcard that will be replaced by sample names determined from output file names"
+  },
+  {
+    "objectID": "slides.html#how-to-run-snakemake",
+    "href": "slides.html#how-to-run-snakemake",
+    "title": "Snakemake tutorial",
+    "section": "How to run snakemake",
+    "text": "How to run snakemake\nBut before you run, you should think about:\n\nshould I modularize my workflow (into multiple snakemake files)?\nshould I leverage a config file to store common parameters?\nshould I use a profile to run on HPC?"
+  },
+  {
+    "objectID": "slides.html#how-to-run-snakemake-1",
+    "href": "slides.html#how-to-run-snakemake-1",
+    "title": "Snakemake tutorial",
+    "section": "How to run snakemake",
+    "text": "How to run snakemake\n\n\n\nBe aware where you run snakemake! If you don’t plan to submit your rules to HPC, make sure you run snakemake on a compute node!\nDo run it on login node if you plan to submit to HPC.\nRecommend using screen or tmux to avoid being disconnected.\n\n\nWithout profile and running locally:\nsnakemake -s Snakefile [output_files]\nOr with a profile on midway:\nsnakemake --profile slurm\n\n\n\n\n\n\n\n\nTip\n\n\n\nIf you name your main snakemake file Snakefile, you don’t need to specify -s Snakefile when running snakemake.\nNot including output file will run targets defined in rule all.\nStructure your directory properly so that snakemake can expect the files it needs."
+  },
+  {
+    "objectID": "slides.html#recommanded-practices",
+    "href": "slides.html#recommanded-practices",
+    "title": "Snakemake tutorial",
+    "section": "Recommanded practices",
+    "text": "Recommanded practices\n\nUse -n to dry-run your workflow\nUse --dag or --rulegraph to visualize your workflow\nUse modularized snakemake files if your workflow is reasonably large\nUse a config file to store common parameters\nCreate multiple profiles, for both HPC or local runs"
+  },
+  {
+    "objectID": "slides.html#how-to-write-snakemake-rules-1",
+    "href": "slides.html#how-to-write-snakemake-rules-1",
+    "title": "Snakemake tutorial",
+    "section": "How to write snakemake rules",
+    "text": "How to write snakemake rules\n\nSnakemake rely on wildcards to track the dependencies between rules.\nImagine you have many steps in your workflow. Snakemake will start from required output files of the last rule, working all the way to the first rule, figuring out what files to produce along the way, based on wildcards.\nThe rules and output files essentially create a DAG."
+  },
+  {
+    "objectID": "slides.html#recommended-practices",
+    "href": "slides.html#recommended-practices",
+    "title": "Snakemake tutorial",
+    "section": "Recommended practices",
+    "text": "Recommended practices\n\n\nUse -n to dry-run your workflow\nUse --dag or --rulegraph to visualize your workflow\nUse modularized snakemake files if your workflow is reasonably large\nUse a config file to store common parameters\nCreate multiple profiles, for both HPC or local runs"
+  },
+  {
+    "objectID": "slides.html#recommended-practices-1",
+    "href": "slides.html#recommended-practices-1",
+    "title": "Snakemake tutorial",
+    "section": "Recommended practices",
+    "text": "Recommended practices\nRecommended directory structure:\n├── .gitignore\n├── README.md\n├── workflow\n│   ├── rules\n|   │   ├── module1.smk\n|   │   └── module2.smk\n│   ├── envs\n|   │   ├── tool1.yaml\n│   ├── scripts\n|   │   ├── script1.py\n|   │   └── script2.R\n|   └── Snakefile\n├── config\n│   ├── config.yaml\n│   └── some-sheet.tsv\n├── results\n└── resources"
+  },
+  {
+    "objectID": "slides.html#recommended-practices-2",
+    "href": "slides.html#recommended-practices-2",
+    "title": "Snakemake tutorial",
+    "section": "Recommended practices",
+    "text": "Recommended practices\nProfile examples:\n\n\nA local profile:\n#~/.config/snakemake/slurm/config.yaml\njobs: 70\ncores: 120\ncluster: \"mkdir -p slurm_logs && sbatch --partition {resources.partition} --account pi-yangili1 -t {resources.time} -c {resources.cpu} --mem {resources.mem_mb} -e slurm_logs/{rule}%j.e -o slurm_logs/{rule}%j.o --job-name {rule}  \"\ndefault-resources: [time=500, mem_mb=15000, cpu=1, partition=caslake]\nkeep-going: True\nprintshellcmds: True\ncluster-cancel: \"scancel\"\nuse-conda: true\nuse-envmodules: true\nuse-singularity: true\nrerun-incomplete: true\nsingularity-args: \"--bind /scratch/midway3/chaodai,/scratch/midway2/chaodai,/project2/yangili1,/project/yangili1\"\n\nA cluster profile:\n#~/.config/snakemake/local/config.yaml\ncores: 8\nkeep-going: true\nprintshellcmds: true\nuse-conda: true\nuse-envmodules: true\nuse-singularity: true\nrerun-incomplete: true\nsingularity-args: \"--bind /scratch/midway3/chaodai,/scratch/midway2/chaodai,/project2/yangili1,/project/yangili1\""
+  }
+]
