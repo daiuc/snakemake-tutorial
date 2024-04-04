@@ -1,0 +1,21 @@
+#import os
+#import sys
+
+
+configfile: "config/config.yaml"
+
+SAMPLES = ['EC001', 'EC002']
+
+
+include: "rules/part1.smk"
+include: "rules/part2.smk"
+
+
+localrules: all
+
+rule all:
+  input:
+    expand("resources/alignment/{samp}.flagstat.txt", samp=SAMPLES),
+    'results/featurecounts/combined.counts',
+
+

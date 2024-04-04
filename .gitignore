@@ -16,7 +16,11 @@ analysis/*_cache
 analysis/site_libs
 **test*
 **tmp*
-code
+code/logs
+code/results
+code/resources
+code/.snakemake
+**checkpoint**
 data
 output
 
