@@ -630,7 +630,7 @@ Chao Dai
 <p>Profile examples:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>A local profile:</p>
+<p>A HPC cluster profile:</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a href="#cb9-1"></a><span class="co">#~/.config/snakemake/slurm/config.yaml</span></span>
 <span id="cb9-2"><a href="#cb9-2"></a><span class="fu">jobs</span><span class="kw">:</span><span class="at"> </span><span class="dv">70</span></span>
 <span id="cb9-3"><a href="#cb9-3"></a><span class="fu">cores</span><span class="kw">:</span><span class="at"> </span><span class="dv">120</span></span>
@@ -645,7 +645,7 @@ Chao Dai
 <span id="cb9-12"><a href="#cb9-12"></a><span class="fu">rerun-incomplete</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
 <span id="cb9-13"><a href="#cb9-13"></a><span class="fu">singularity-args</span><span class="kw">:</span><span class="at"> </span><span class="st">"--bind /scratch/midway3/chaodai,/scratch/midway2/chaodai,/project2/yangili1,/project/yangili1"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
-<p>A cluster profile:</p>
+<p>A local run profile:</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a href="#cb10-1"></a><span class="co">#~/.config/snakemake/local/config.yaml</span></span>
 <span id="cb10-2"><a href="#cb10-2"></a><span class="fu">cores</span><span class="kw">:</span><span class="at"> </span><span class="dv">8</span></span>
 <span id="cb10-3"><a href="#cb10-3"></a><span class="fu">keep-going</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
