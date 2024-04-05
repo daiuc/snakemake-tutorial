@@ -270,7 +270,7 @@ Profile examples:
 
 ::: columns
 ::: {.column width="50%"}
-A local profile:
+A HPC cluster profile:
 ```yaml
 #~/.config/snakemake/slurm/config.yaml
 jobs: 70
@@ -289,7 +289,7 @@ singularity-args: "--bind /scratch/midway3/chaodai,/scratch/midway2/chaodai,/pro
 :::
 
 ::: {.column width="50%"}
-A cluster profile:
+A local run profile:
 ```yaml
 #~/.config/snakemake/local/config.yaml
 cores: 8
