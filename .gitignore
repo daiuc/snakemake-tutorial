@@ -17,6 +17,7 @@ analysis/site_libs
 **test*
 **tmp*
 code/logs
+**/*logs
 code/results
 code/resources
 code/.snakemake
